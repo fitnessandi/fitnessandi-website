@@ -1,5 +1,7 @@
 import { createServerClient } from '@/lib/supabase/server';
 
+export const runtime = 'edge';
+
 const ALLOWED_MIME_TYPES = new Set(['image/jpeg', 'image/png', 'image/webp']);
 const MAX_FILE_SIZE = 10 * 1024 * 1024; // 10 MB
 const VALID_MEAL_TYPES = new Set(['breakfast', 'lunch', 'dinner', 'snack']);

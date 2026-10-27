@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server';
 import { createServerClient } from '@/lib/supabase/server';
 
+export const runtime = 'edge';
+
 /**
  * GET /api/workout/daily-log?userId=...&date=YYYY-MM-DD
  * Returns all logged exercises (with sets) for a given user+date.

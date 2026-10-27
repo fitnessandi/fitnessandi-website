@@ -2,6 +2,8 @@ import { insertMealLog } from '@/lib/nutrition/meal-log';
 import { createServerClient } from '@/lib/supabase/server';
 import type { MealType, LogSource } from '@/lib/types/meal-log';
 
+export const runtime = 'edge';
+
 const VALID_MEAL_TYPES = new Set<string>(['breakfast', 'lunch', 'dinner', 'snack']);
 const VALID_SOURCES = new Set<string>(['photo', 'description', 'manual', 'plan']);
 

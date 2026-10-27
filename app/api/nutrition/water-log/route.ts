@@ -1,6 +1,8 @@
 import { createServerClient } from '@/lib/supabase/server';
 import type { WaterLogRow } from '@/lib/types/water-log';
 
+export const runtime = 'edge';
+
 export async function POST(request: Request): Promise<Response> {
   let body: Record<string, unknown>;
   try {

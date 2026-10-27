@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server';
 import { createServerClient } from '@/lib/supabase/server';
 
+export const runtime = 'edge';
+
 /**
  * GET /api/workout/history
  * Returns paginated workout history for a user with aggregated volume metrics.

@@ -4,6 +4,8 @@ import { buildReminderContent } from '@/lib/reminders/content';
 import { sendEmail } from '@/lib/email/send';
 import type { ReminderRow } from '@/lib/types/reminder';
 
+export const runtime = 'edge';
+
 // Triggered by Vercel Cron (see vercel.json). Protected by CRON_SECRET so it
 // can't be invoked by anyone who finds the URL.
 export async function GET(request: Request): Promise<Response> {

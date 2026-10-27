@@ -1,3 +1,5 @@
+export const runtime = 'edge';
+
 export interface MealSuggestion {
   name: string;
   calories: number;

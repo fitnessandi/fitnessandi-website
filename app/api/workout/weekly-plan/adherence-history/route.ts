@@ -8,6 +8,8 @@
 import { createServerClient } from '@/lib/supabase/server';
 import { getAdherenceHistory, DatabaseError } from '@/lib/weekly-planner/db';
 
+export const runtime = 'edge';
+
 /**
  * GET /api/workout/weekly-plan/adherence-history
  * 

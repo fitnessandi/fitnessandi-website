@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server';
 import { createServerClient } from '@/lib/supabase/server';
 
+export const runtime = 'edge';
+
 // ── Keyword maps ────────────────────────────────────────────────────────────
 
 const MUSCLE_KEYWORDS: Record<string, string> = {

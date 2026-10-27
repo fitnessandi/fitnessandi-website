@@ -27,6 +27,8 @@ import {
 } from '@/lib/weekly-planner/errors';
 import { logAPIRequest, logError, createTimer } from '@/lib/weekly-planner/logger';
 
+export const runtime = 'edge';
+
 /**
  * POST /api/workout/weekly-plan
  * 

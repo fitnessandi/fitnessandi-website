@@ -1,5 +1,7 @@
 import { estimateMacrosFromDescription } from '@/lib/nutrition/describe-meal';
 
+export const runtime = 'edge';
+
 export async function GET() {
   try {
     console.log('[Test Groq] Starting test...');

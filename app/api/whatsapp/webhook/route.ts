@@ -2,6 +2,8 @@ import { sendWhatsAppMessage, logWhatsAppMessage } from '@/lib/whatsapp/send';
 import { routeIncomingMessage } from '@/lib/whatsapp/commands';
 import { resolveUserIdFromPhone } from '@/lib/whatsapp/users';
 
+export const runtime = 'edge';
+
 // Meta calls this once when the webhook URL is configured, to verify ownership.
 export async function GET(request: Request): Promise<Response> {
   const url = new URL(request.url);

@@ -1,3 +1,5 @@
+export const runtime = 'edge';
+
 export interface USDAFood {
   fdcId: number;
   description: string;

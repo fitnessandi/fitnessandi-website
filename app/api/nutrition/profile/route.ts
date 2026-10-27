@@ -2,6 +2,8 @@ import { createServerClient } from '@/lib/supabase/server';
 import { computeBmi, getBmiCategory, computeTargets } from '@/lib/nutrition/targets';
 import type { ActivityLevel, Goal, CuisineType } from '@/lib/types/nutrition-profile';
 
+export const runtime = 'edge';
+
 // GET: Fetch user profile
 export async function GET(request: Request): Promise<Response> {
   const { searchParams } = new URL(request.url);

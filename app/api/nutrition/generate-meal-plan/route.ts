@@ -1,5 +1,7 @@
 import { generateMealPlanForUser, type ProfileContext, type RemainingMacros } from '@/lib/nutrition/meal-plan';
 
+export const runtime = 'edge';
+
 const VALID_MEAL_TYPES = new Set(['breakfast', 'lunch', 'dinner', 'snack']);
 
 export async function POST(request: Request): Promise<Response> {

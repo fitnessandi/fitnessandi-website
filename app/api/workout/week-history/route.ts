@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server';
 import { createServerClient } from '@/lib/supabase/server';
 
+export const runtime = 'edge';
+
 /**
  * GET /api/workout/week-history?userId=...
  * Returns the last 7 days of workout logs with exercise breakdown.

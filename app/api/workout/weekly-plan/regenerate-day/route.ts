@@ -11,6 +11,8 @@ import { fetchRecommendation, MLEngineError, InvalidMLResponseError } from '@/li
 import { regenerateDay, DatabaseError } from '@/lib/weekly-planner/db';
 import type { RegenerateDayRequest } from '@/lib/types/weekly-planner';
 import {
+
+export const runtime = 'edge';
   handleInvalidJSON,
   handleValidationError,
   handleServiceUnavailable,

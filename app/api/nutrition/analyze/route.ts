@@ -2,6 +2,8 @@ import { createClient } from '@supabase/supabase-js';
 import type { MealLogRow } from '@/lib/types/meal-log';
 import { insertMealLog } from '@/lib/nutrition/meal-log';
 
+export const runtime = 'edge';
+
 const ALLOWED_MIME_TYPES = new Set(['image/jpeg', 'image/png', 'image/webp']);
 const MAX_BYTES = 10 * 1024 * 1024; // 10 MB
 

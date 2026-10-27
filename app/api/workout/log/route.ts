@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server';
 import { createServerClient } from '@/lib/supabase/server';
 
+export const runtime = 'edge';
+
 /**
  * POST /api/workout/log
  * Logs a workout entry: creates a workout_log row (if none exists for today)

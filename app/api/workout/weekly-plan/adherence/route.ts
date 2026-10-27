@@ -10,6 +10,8 @@ import { validateAdherenceInput } from '@/lib/weekly-planner/validation';
 import { updateAdherence, DatabaseError } from '@/lib/weekly-planner/db';
 import type { UpdateAdherenceRequest } from '@/lib/types/weekly-planner';
 
+export const runtime = 'edge';
+
 /**
  * PATCH /api/workout/weekly-plan/adherence
  * 

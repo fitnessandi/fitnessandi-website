@@ -3,6 +3,8 @@ import type { NutritionProfileRow } from '@/lib/types/nutrition-profile';
 import type { MealLogRow } from '@/lib/types/meal-log';
 import type { WaterLogRow } from '@/lib/types/water-log';
 
+export const runtime = 'edge';
+
 export async function GET(request: Request): Promise<Response> {
   const { searchParams } = new URL(request.url);
   const userId = searchParams.get('userId');
